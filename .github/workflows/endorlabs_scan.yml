@@ -44,5 +44,8 @@ jobs:
           # PR-specific settings (Optional, but good practice for CI)
           # Only run the PR-specific scan if the workflow was triggered by a pull_request event
           pr: ${{ github.event_name == 'pull_request' }}
+          enable_pr_comments: true
+          scan_summary_output_type: 'table'
+
           # pr_incremental: true
           pr_baseline: ${{ github.base_ref }} # Automatically set baseline to the target branch (e.g., 'main')

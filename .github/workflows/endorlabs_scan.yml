@@ -48,5 +48,4 @@ jobs:
           enable_pr_comments: true
           scan_summary_output_type: 'table'
 
-          # pr_incremental: true
-          pr_baseline: ${{ github.base_ref }} # Automatically set baseline to the target branch (e.g., 'main')
+

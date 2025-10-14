@@ -33,6 +33,7 @@ jobs:
           namespace: "endor-solutions-tgowan" # 💡 REPLACE with your actual Endor Labs namespace
           api_key: ${{ secrets.ENDOR_API_CREDENTIALS_KEY }}
           api_secret: ${{ secrets.ENDOR_API_CREDENTIALS_SECRET }}
+          github_token: ${{ secrets.GH_TOKEN_PR_COMMENTS }}
           enable_github_action_token: false # Disable OIDC auth, use API Key/Secret
 
           # Scanning Parameters (Customizable)
